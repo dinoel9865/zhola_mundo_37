@@ -1,0 +1,4 @@
+@EndUserText.label: 'dfsdfs'
+define service ZSD_CDS_DD_ZCONCE_37_v2 {
+  expose zcds_dd_zconce_37_v2;
+}

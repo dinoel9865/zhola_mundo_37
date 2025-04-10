@@ -1,0 +1,68 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+  title: { value: 'NombreConce' },
+  description: { value: 'ProvConce' }
+}
+annotate entity zcds_dd_zconce_37_v2    with 
+{
+
+
+@UI.facet: [
+  {
+    id:              'infoGeneral',
+    purpose:         #STANDARD,
+    type:            #IDENTIFICATION_REFERENCE,
+    label:           'Información general',
+    position:        10
+  },
+  {
+    id:              'Provincia',
+    purpose:         #STANDARD,
+    type:            #FIELDGROUP_REFERENCE,
+    targetElement:   'ProvConce',
+    label:           'Provincia',
+    position:        20
+  }
+]
+
+
+
+
+
+
+
+
+  @UI.selectionField: [{ position: 10 }] //Posicion del filtro de busqueda
+  @UI.lineItem:       [{ position: 10, label: 'ID Concesionario' }]//Indicamos posicion y label
+  @UI.identification: [{ position: 10 }]
+  @UI.hidden: true //Ocultar el campo
+  IdConce;
+
+  @UI.selectionField: [{ position: 20 }] //Posicion del filtro de busqueda
+  @UI.lineItem:       [{ position: 20, label: 'Nombre Concesionario' }]
+  @UI.identification: [{ position: 20 }]
+  NombreConce;
+
+  @UI.lineItem:       [{ position: 30, label: 'Localidad' }]
+  @UI.selectionField: [{ position: 20 }] //Posicion del filtro de busqueda
+  @UI.identification: [{ position: 30 }]
+  LocalConce;
+
+  @UI.lineItem:       [{ position: 40, label: 'Provincia' }]
+  @UI.selectionField: [{ position: 30 }]
+  @UI.identification: [{ position: 40 }]
+  ProvConce;
+
+  @UI.lineItem:       [{ position: 50, label: 'Código Postal' }]
+  @UI.identification: [{ position: 50 }]
+  CodPostaConce;
+
+  @UI.lineItem:       [{ position: 60, label: 'Teléfono' }]
+  @UI.identification: [{ position: 60 }]
+  TelefonoConce;
+
+  @UI.lineItem:       [{ position: 70, label: 'Email' }]
+  //@UI.identification: [{ position: 70 }]
+   EmailConce;
+    
+}

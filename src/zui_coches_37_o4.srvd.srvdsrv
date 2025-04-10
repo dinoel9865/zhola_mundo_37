@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Definición de servicio para ZC_COCHES_37'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_COCHES_37'
+  }
+}
+define service ZUI_COCHES_37_O4 provider contracts odata_v4_ui {
+  expose ZC_COCHES_37;
+}

@@ -1,0 +1,14 @@
+managed implementation in class zbp_cds_dd_zconce_37_v2 unique;
+strict ( 2 );
+
+define behavior for zcds_dd_zconce_37_v2 //alias <alias_name>
+persistent table zconcesion37
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) IdConce;
+}
